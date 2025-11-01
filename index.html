@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildRight Construction - Building Your Dreams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-hard-hat text-blue-600 text-3xl mr-3"></i>
+                    <span class="text-2xl font-bold text-gray-800">BuildRight</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-blue-600 transition">Services</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600 transition">Projects</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-blue-600 transition">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-64 h-full bg-white shadow-xl md:hidden">
+            <div class="p-6">
+                <button id="close-menu" class="mb-8">
+                    <i class="fas fa-times text-2xl text-gray-700"></i>
+                </button>
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="mobile-nav-link text-gray-700 hover:text-blue-600 transition py-2">Home</a>
+                    <a href="#about" class="mobile-nav-link text-gray-700 hover:text-blue-600 transition py-2">About</a>
+                    <a href="#services" class="mobile-nav-link text-gray-700 hover:text-blue-600 transition py-2">Services</a>
+                    <a href="#projects" class="mobile-nav-link text-gray-700 hover:text-blue-600 transition py-2">Projects</a>
+                    <a href="#testimonials" class="mobile-nav-link text-gray-700 hover:text-blue-600 transition py-2">Testimonials</a>
+                    <a href="#contact" class="mobile-nav-link text-gray-700 hover:text-blue-600 transition py-2">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 text-center animate-fade-in-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Building Your Dreams</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                Professional construction services with over 20 years of experience in residential and commercial projects
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
+                    Get Free Quote
+                </a>
+                <a href="#projects" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold transition transform hover:scale-105">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About BuildRight Construction</h2>
+                    <p class="text-gray-600 mb-4">
+                        With over two decades of excellence in the construction industry, BuildRight Construction has established itself as a trusted name in delivering quality projects on time and within budget.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Our team of skilled professionals is committed to turning your vision into reality, whether it's a custom home, commercial building, or renovation project. We pride ourselves on attention to detail, innovative solutions, and exceptional customer service.
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-3xl font-bold text-blue-600">500+</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-blue-600">20+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-blue-600">98%</div>
+                            <div class="text-gray-600">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/seed/construction2/600/400.jpg" alt="Construction Team" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Residential Construction</h3>
+                    <p class="text-gray-600">
+                        Custom homes, additions, and renovations designed to meet your lifestyle needs and exceed your expectations.
+                    </p>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Commercial Projects</h3>
+                    <p class="text-gray-600">
+                        Office buildings, retail spaces, and industrial facilities built with efficiency and durability in mind.
+                    </p>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Renovation & Remodeling</h3>
+                    <p class="text-gray-600">
+                        Transform your existing space with our expert renovation and remodeling services.
+                    </p>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Design & Planning</h3>
+                    <p class="text-gray-600">
+                        Comprehensive design and planning services to ensure your project starts on the right foundation.
+                    </p>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Project Management</h3>
+                    <p class="text-gray-600">
+                        End-to-end project management ensuring timely completion and budget adherence.
+                    </p>
+                </div>
+                
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Green Building</h3>
+                    <p class="text-gray-600">
+                        Sustainable construction solutions that are environmentally friendly and energy-efficient.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Recent Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card relative overflow-hidden rounded-lg shadow-lg group cursor-pointer">
+                    <img src="https://picsum.photos/seed/project1/400/300.jpg" alt="Modern Home" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Modern Family Home</h3>
+                            <p class="text-sm">Complete new construction with sustainable materials</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card relative overflow-hidden rounded-lg shadow-lg group cursor-pointer">
+                    <img src="https://picsum.photos/seed/project2/400/300.jpg" alt="Office Building" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Downtown Office Complex</h3>
+                            <p class="text-sm">10-story commercial building with modern amenities</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card relative overflow-hidden rounded-lg shadow-lg group cursor-pointer">
+                    <img src="https://picsum.photos/seed/project3/400/300.jpg" alt="Restaurant" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Restaurant Renovation</h3>
+                            <p class="text-sm">Complete interior remodel for upscale dining</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card relative overflow-hidden rounded-lg shadow-lg group cursor-pointer">
+                    <img src="https://picsum.photos/seed/project4/400/300.jpg" alt="Shopping Center" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Shopping Center</h3>
+                            <p class="text-sm">Retail space development with parking facilities</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card relative overflow-hidden rounded-lg shadow-lg group cursor-pointer">
+                    <img src="https://picsum.photos/seed/project5/400/300.jpg" alt="Luxury Villa" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Luxury Villa</h3>
+                            <p class="text-sm">High-end residential property with pool and garden</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card relative overflow-hidden rounded-lg shadow-lg group cursor-pointer">
+                    <img src="https://picsum.photos/seed/project6/400/300.jpg" alt="Warehouse" class="w-full h-64 object-cover">
+                    <div class="project-overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Industrial Warehouse</h3>
+                            <p class="text-sm">Large-scale storage facility with loading docks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "BuildRight Construction exceeded our expectations. Our new home is everything we dreamed of and more. Professional, reliable, and outstanding quality!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/seed/person1/50/50.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-bold text-gray-800">Sarah Johnson</div>
+                            <div class="text-sm text-gray-600">Homeowner</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "The team at BuildRight delivered our office complex on time and within budget. Their attention to detail and project management skills are unmatched."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/seed/person2/50/50.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-bold text-gray-800">Michael Chen</div>
+                            <div class="text-sm text-gray-600">CEO, TechCorp</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        "We've worked with BuildRight on multiple projects. They consistently deliver high-quality work and exceptional service. Highly recommended!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/seed/person3/50/50.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <div class="font-bold text-gray-800">Emily Rodriguez</div>
+                            <div class="text-sm text-gray-600">Property Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Get In Touch</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-xl w-8"></i>
+                            <span class="text-gray-600">123 Construction Ave, Building City, BC 12345</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-600 text-xl w-8"></i>
+                            <span class="text-gray-600">(555) 123-4567</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-600 text-xl w-8"></i>
+                            <span class="text-gray-600">info@buildright.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-blue-600 text-xl w-8"></i>
+                            <span class="text-gray-600">Mon-Fri: 8:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-600 hover:text-blue-700 text-2xl transition">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-700 text-2xl transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-700 text-2xl transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-700 text-2xl transition">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <input type="text" id="name" placeholder="Your Name" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                        </div>
+                        <div>
+                            <input type="email" id="email" placeholder="Your Email" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                        </div>
+                        <div>
+                            <input type="tel" id="phone" placeholder="Your Phone"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                        </div>
+                        <div>
+                            <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600">
+                                <option value="">Select a Service</option>
+                                <option value="residential">Residential Construction</option>
+                                <option value="commercial">Commercial Projects</option>
+                                <option value="renovation">Renovation & Remodeling</option>
+                                <option value="design">Design & Planning</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea id="message" rows="4" placeholder="Your Message" required
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-message" class="mt-4 hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-hard-hat text-blue-400 text-2xl mr-3"></i>
+                    <span class="text-xl font-bold">BuildRight Construction</span>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">&copy; 2024 BuildRight Construction. All rights reserved.</p>
+                    <p class="text-gray-400 text-sm mt-1">Licensed & Insured | Bonded Contractor</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg hidden transition transform hover:scale-110">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+<form id="contactForm">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <textarea id="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+<p id="status"></p>
+
+<script src="script.js"></script>
